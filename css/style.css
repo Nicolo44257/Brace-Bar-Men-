@@ -649,16 +649,17 @@ footer::before {
   color: #666;
 }
 .prodotto-congelato {
-  font-size: 10px;
-  color: #999; /* Un grigio chiaro */
-  position: absolute;
-  bottom: 5px;
-  left: 5px;
-  background-color: rgba(255, 255, 255, 0.7); /* Trasparente ma leggibile */
-  padding: 2px 5px;
-  border-radius: 4px;
-  font-weight: 500;
+  display: block;
+  font-size: 12px;
+  color: #666;
+  font-style: italic;
+  margin-top: 4px;
+  background-color: transparent;
+  padding: 0;
+  position: static; /* Rimuove il posizionamento assoluto */
+  font-weight: 400;
 }
+
 :root {
   --primary-color: #e4002b; /* Rosso Campari */
 }
