@@ -164,6 +164,7 @@ header {
   font-size: 16px;
   text-align: center;
   margin-bottom: 25px;
+  margin-top: 10px;
   font-style: italic;
   color: #666;
 }
@@ -217,13 +218,15 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 .menu-item-title {
   font-size: 18px;
+  margin-bottom: 0px;
   font-weight: 600;
   margin-right: 10px;
+  margin-top: -5px;
 }
 
 .menu-item-price {
@@ -235,7 +238,14 @@ header {
 .menu-item-description {
   font-size: 14px;
   color: #666;
-  margin-bottom: 5px;
+  margin-bottom: 0px;
+}
+.allergen-info {
+  font-size: 13px;
+  font-style: italic;
+  color: #999;
+  margin-top: 0;
+  margin-bottom: -5px;
 }
 
 /* Badge per prodotti speciali */
@@ -638,4 +648,41 @@ footer::before {
   font-style: italic;
   color: #666;
 }
+.prodotto-congelato {
+  font-size: 10px;
+  color: #999; /* Un grigio chiaro */
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  background-color: rgba(255, 255, 255, 0.7); /* Trasparente ma leggibile */
+  padding: 2px 5px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+:root {
+  --primary-color: #e4002b; /* Rosso Campari */
+}
 
+.social-header-fixed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  padding: 10px 0;
+}
+
+/* Tutte le icone con riempimento bianco + contorno nero */
+.social-icon {
+  font-size: 22px;
+  color: white;
+  -webkit-text-stroke: 1.2px black;
+  text-stroke: 1.2px black;
+  transition: all 0.3s ease;
+}
+
+/* Al passaggio del mouse diventano rosse piene */
+.social-icon:hover {
+  color: var(--primary-color);
+  -webkit-text-stroke: 0;
+  text-stroke: 0;
+}
